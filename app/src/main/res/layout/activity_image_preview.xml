@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <com.example.ts.grallery.view.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/include_top_bar" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#cc22292c">
+
+        <Button
+            android:id="@+id/preview_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/selector_top_ok"
+            android:text="@string/preview_edit_bt"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/margin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#000" />
+        <Button
+            android:id="@+id/preview_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_top_ok"
+            android:text="@string/preview_del"
+            android:layout_gravity="end"
+            android:textSize="16sp" />
+    </FrameLayout>
+</RelativeLayout>
